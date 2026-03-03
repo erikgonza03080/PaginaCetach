@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tituloPdf = document.getElementById("tituloPdf");
   const btnDescargarPdf = document.getElementById("btnDescargarPdf");
 
-  // Mapa de PDFs
+  // Diccionario de PDFs
   const pdfs = {
     informatica: "pdf/peritoInformatica.pdf",
     administracion: "pdf/peritoAdministracion.pdf",
@@ -47,19 +47,4 @@ document.addEventListener("DOMContentLoaded", () => {
     
   });
 
-  // Smooth scroll para menú interno
-  const enlacesInternos = document.querySelectorAll('a[href^="#"]');
-
-  enlacesInternos.forEach((enlace) => {
-    enlace.addEventListener("click", function (e) {
-      const destino = document.querySelector(this.getAttribute("href"));
-
-      if (destino) {
-        e.preventDefault();
-        destino.scrollIntoView({
-          behavior: "smooth"
-        });
-      }
-    });
-  });
 });
