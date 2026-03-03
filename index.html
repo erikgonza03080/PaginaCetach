@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cetach 2</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <img src="images/logo2.png" style="width: 100px;"> Cetach 2
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#inicio">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="ofertaDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Oferta Académica
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="ofertaDropdown">
+                <li><a class="dropdown-item" href="#carreras">Carreras Técnicas</a></li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<section id="inicio" class="hero-section">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <div class="row min-vh-100 align-items-center">
+      <div class="col-lg-7">
+        <p class="hero-subtitle mb-2">Elige ser Competitivo</p>
+        <h1 class="hero-title mb-3">
+          CARRERAS <br />
+          PARA CRECER
+        </h1>
+        <p class="hero-text mb-4">
+          Explora nuestras carreras técnicas, revisa la lista de útiles
+          y descarga el PDF de forma rápida.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#carreras" class="btn btn-warning btn-lg px-4 fw-semibold">
+            Ver carreras
+          </a>
+          <a href="#contacto" class="btn btn-outline-light btn-lg px-4 fw-semibold">
+            Contáctanos
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <img
+            src="https://www.cetach2.edu.gt/images/home/1.jpg"
+            alt="Institución"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Sobre Nosotros</h2>
+          <p class="text-muted">
+            Somos una institución enfocada en formar estudiantes preparados para
+            el futuro. Aquí podrás conocer nuestras carreras y consultar la lista
+            de útiles de cada una de forma rápida.
+          </p>
+          <p class="text-muted mb-0">
+            El diseño está pensado para que sea limpio, moderno y similar a una
+            página institucional educativa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRERAS -->
+  <section id="carreras" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="text-primary fw-semibold text-uppercase mb-2">Opciones educativas</p>
+        <h2 class="fw-bold">Nuestras 5 Carreras</h2>
+        <p class="text-muted">
+          Selecciona una carrera para ver su lista de útiles en PDF.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Carrera 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img
+              src="https://www.cetach2.edu.gt/images/shop/4.jpg"
+              class="card-img-top"
+              alt="Informática"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Perito en Informática</h5>
+              <p class="card-text text-muted">
+                Formación en computación, software y herramientas digitales.
+              </p>
+              <button
+                class="btn btn-primary mt-auto btn-ver-pdf"
+                data-carrera="informatica"
+                data-nombre="Perito en Informática"
+              >
+                Ver lista de útiles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carrera 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img
+              src="https://www.cetach2.edu.gt/images/shop/7.jpg"
+              class="card-img-top"
+              alt="Administración"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Perito en Administración</h5>
+              <p class="card-text text-muted">
+                Preparación en gestión, organización y procesos administrativos.
+              </p>
+              <button
+                class="btn btn-primary mt-auto btn-ver-pdf"
+                data-carrera="administracion"
+                data-nombre="Perito en Administración"
+              >
+                Ver lista de útiles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carrera 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img
+              src="https://www.cetach2.edu.gt/images/shop/16.jpg"
+              class="card-img-top"
+              alt="Contabilidad"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Perito Contador</h5>
+              <p class="card-text text-muted">
+                Enfoque en registros contables, finanzas y control empresarial.
+              </p>
+              <button
+                class="btn btn-primary mt-auto btn-ver-pdf"
+                data-carrera="contador"
+                data-nombre="Perito Contador"
+              >
+                Ver lista de útiles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carrera 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img
+              src="https://www.cetach2.edu.gt/images/shop/19.jpg"
+              class="card-img-top"
+              alt="Electrónica"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Perito en Electrónica</h5>
+              <p class="card-text text-muted">
+                Aprendizaje en circuitos, dispositivos y sistemas electrónicos.
+              </p>
+              <button
+                class="btn btn-primary mt-auto btn-ver-pdf"
+                data-carrera="electronica"
+                data-nombre="Perito en Electrónica"
+              >
+                Ver lista de útiles
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carrera 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img
+              src="https://www.cetach2.edu.gt/images/shop/12.jpg"
+              class="card-img-top"
+              alt="Mecánica"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Mecánica Automotriz</h5>
+              <p class="card-text text-muted">
+                Capacitación técnica en motores, mantenimiento y diagnóstico.
+              </p>
+              <button
+                class="btn btn-primary mt-auto btn-ver-pdf"
+                data-carrera="mecanica"
+                data-nombre="Mecánica Automotriz"
+              >
+                Ver lista de útiles
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="visor-pdf" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <p class="text-primary fw-semibold text-uppercase mb-2">Documentos</p>
+        <h2 class="fw-bold">Vista previa de lista de útiles</h2>
+        <p class="text-muted">
+          Aquí se mostrará el PDF de la carrera seleccionada.
+        </p>
+      </div>
+
+      <div class="card border-0 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3 gap-2">
+            <div>
+              <h4 id="tituloPdf" class="mb-1">Selecciona una carrera</h4>
+              <p class="text-muted mb-0">
+                El PDF se cargará automáticamente al hacer clic en una carrera.
+              </p>
+            </div>
+
+            <a
+              id="btnDescargarPdf"
+              href="#"
+              class="btn btn-success disabled"
+              download
+            >
+              Descargar PDF
+            </a>
+          </div>
+
+          <div class="ratio ratio-16x9 border rounded overflow-hidden bg-white">
+            <iframe
+              id="pdfViewer"
+              src=""
+              title="Vista previa PDF"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Contáctanos</h2>
+          <p class="text-muted mb-2">Teléfono: 7849 1332</p>
+          <p class="text-muted mb-2">WhatsApp: 3674 5978</p>
+          <p class="text-muted mb-0">Correo: info@micentroeducativo.com</p>
+        </div>
+
+        <div class="col-lg-6">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Tu nombre" />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Tu correo" />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1 fw-semibold">Cetach2</p>
+      <p class="mb-0 small">© 2026 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
