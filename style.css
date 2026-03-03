@@ -1,0 +1,345 @@
+/* Base */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #0d2c54, #123d73) !important;
+}
+
+.navbar-brand {
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffd166 !important;
+}
+
+#inicio h1,
+#inicio p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* Secciones */
+section {
+  scroll-margin-top: 90px;
+}
+
+h2 {
+  color: #0d2c54;
+}
+
+/* Cards */
+.card {
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  height: 420px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.card-title {
+  color: #0d2c54;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+}
+
+.btn-success {
+  font-weight: 600;
+}
+
+/* Visor PDF */
+#visor-pdf .card {
+  border-radius: 16px;
+}
+
+#pdfViewer {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #f8f9fa;
+}
+
+.ratio {
+  min-height: 500px;
+}
+
+/* Formulario */
+.form-control {
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  border: 1px solid #d9dee5;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+  border-color: #86b7fe;
+}
+
+/* Footer */
+footer {
+  background: #0d2c54 !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  #inicio .container-fluid {
+    text-align: center;
+  }
+
+  .ratio {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card img {
+    height: 200px;
+  }
+
+  .ratio {
+    min-height: 300px;
+  }
+
+  #inicio h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Base */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(8, 25, 49, 0.88) !important;
+  backdrop-filter: blur(6px);
+}
+
+.navbar-brand {
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffd166 !important;
+}
+
+/* HERO NUEVO */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: url("images/slide-3.jpg") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Si esa imagen no carga, usa una tuya local:
+.hero-section {
+  background: url("img/portada.jpg") center center/cover no-repeat;
+}
+*/
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(7, 22, 43, 0.82) 0%,
+    rgba(7, 22, 43, 0.68) 45%,
+    rgba(7, 22, 43, 0.35) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding-top: 90px;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #ffd166;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  line-height: 0.95;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 2px 3px 12px rgba(0, 0, 0, 0.35);
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  max-width: 600px;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Secciones */
+section {
+  scroll-margin-top: 90px;
+}
+
+h2 {
+  color: #0d2c54;
+}
+
+/* Cards */
+.card {
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  height: 320px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.card-title {
+  color: #0d2c54;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+}
+
+.btn-success {
+  font-weight: 600;
+}
+
+/* Visor PDF */
+#visor-pdf .card {
+  border-radius: 16px;
+}
+
+#pdfViewer {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #f8f9fa;
+}
+
+.ratio {
+  min-height: 500px;
+}
+
+/* Formulario */
+.form-control {
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  border: 1px solid #d9dee5;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+  border-color: #86b7fe;
+}
+
+/* Footer */
+footer {
+  background: #0d2c54 !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .hero-section {
+    min-height: 85vh;
+    background-position: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ratio {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card img {
+    height: 220px;
+  }
+
+  .ratio {
+    min-height: 300px;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+}
+
+.card img {
+  height: 320px;
+  object-fit: cover;
+}
+#visor-pdf {
+  display: none;
+}
